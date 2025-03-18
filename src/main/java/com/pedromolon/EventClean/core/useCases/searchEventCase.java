@@ -1,6 +1,6 @@
 package com.pedromolon.EventClean.core.useCases;
 
-import org.yaml.snakeyaml.events.Event;
+import com.pedromolon.EventClean.core.entities.Event;
 
 public interface searchEventCase {
     

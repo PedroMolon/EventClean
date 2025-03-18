@@ -2,7 +2,7 @@ package com.pedromolon.EventClean.core.entities;
 
 import com.pedromolon.EventClean.core.enums.TipoEvento;
 
-import jakarta.persistence.Table;
+import java.time.LocalDateTime;
 
 public record Event(
     Long id,
@@ -11,7 +11,8 @@ public record Event(
     String identificador,
     LocalDateTime dataInicio,
     LocalDateTime dataFim,
-    String local,
+    Integer capacidade,
+    String localEvento,
     String organizador,
-    TipoEvento tipoEvento,
+    TipoEvento tipoEvento
 ) {}
